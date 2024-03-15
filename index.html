@@ -1,78 +1,112 @@
 <!DOCTYPE html>
 <hmtl lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-    content="IE=edge">
-    <meta name="viewport"
-    content="width=device-width,
-    initial-scale=1.0">
-    <title>victorseart</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header>
-        <a href="#" class="logo">
-            <img src="victorseartlogo_tiny.png" alt="victorseart" class="logo-img">
-            <h2 class="nombre-empresa">Victor Seart</h2>
-        </a>
-        <nav>
-            <a href="#about-me" class="nav-link">ABOUT ME</a>
-            <a href="#proyectos" class="nav-link">PROJECTS</a>
-            <a href="#contacto" class="nav-link">CONTACT</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <title>victorseart</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="icon" href="./images/victorseartlogo_favicon.png" />
+    </head>
+    <body>
+        <header>
+            <a href="https://vitingo98.github.io/" class="logo">
+                <img
+                    src="./images/victorseartlogo_tiny.png"
+                    alt="victorseart"
+                    class="logo-img"
+                />
+                <h2 class="nombre-empresa">Victor Seart</h2>
+            </a>
+            <nav>
+                <a href="#about-me" class="nav-link">ABOUT ME</a>
+                <a href="#proyectos" class="nav-link">PROJECTS</a>
+                <a href="#contacto" class="nav-link">CONTACT</a>
+            </nav>
+        </header>
 
-    <section id="about-me">
-        <div class="container">
-            <div class="img-container"></div>
-            <h1>ABOUT ME</h1>
-            <p>Hi! my name is Victor and I love videogames! <br>
-                like many of us, I grew up playing a lot of videogames <br>
-                and now, I want to create games that my inner kid would <br>
-                have love to play!
-            </p>
-        </div>
-    </section>
-
-    <section id="proyectos">
-        <div class="title-container">
-            <h1>PROJECTS</h1>
+        <section id="about-me">
             <div class="container">
-                <div class="proyectos-video">
-                    <video class="video" width="640" height="480" controls>
-                        <source src="blockypoly_city_pack.mp4">
-                    </video>
-                </div>
-                <div class="subcontainer">
-                    <div class="proyecto-img">
-                        <img src="blockypoly_title.png" alt="blockypoly city pack" style="width:480px;height:160px;">
-                    </div>
-                    <div class="proyectos-texto">
-                        <p> A city themed lowpoly 3D model pack released in the <br>Unity Asset Store, it
-                            comes with 19 different props, <br>3 buildings types and 8 modular floor pieces!
-                        </p>
-                    </div>
-                </div>
-                
+                <div class="img-container"></div>
+                <h1>ABOUT ME</h1>
+                <p class="description-text">
+                    Hi! my name is Victor and I love videogames! <br />
+                    like many of us, I grew up playing a lot of videogames and
+                    now, I want to create games that my inner kid would have
+                    love to play!
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contacto">
-        <div class="container">
+        <section id="proyectos">
             <div class="title-container">
-                <h1>CONTACT</h1>
+                <h1 class="title-head">PROJECTS</h1>
+                <div class="container-proyect">
+                    <div class="proyectos-video">
+                        <iframe
+                            src="https://www.youtube.com/embed/p0TmV73ujRQ"
+                            width="420"
+                            height="315"
+                            frameborder="0"
+                        ></iframe>
+                    </div>
+                    <div class="subcontainer-proyect">
+                        <div class="proyecto-img">
+                            <img
+                                src="./images/blockypoly_title.png"
+                                alt="blockypoly city pack"
+                                style="width: 450px; height: 110px"
+                            />
+                        </div>
+                        <div class="proyectos-texto">
+                            <p class="description-text">
+                                A city themed lowpoly 3D model pack released in
+                                the Unity Asset Store, it comes with 19
+                                different props, 3 buildings types and 8 modular
+                                floor pieces!
+                            </p>
+                        </div>
+                        <a
+                            class="button-buy"
+                            href="https://www.youtube.com"
+                            target="_blank"
+                            >BUY NOW!</a
+                        >
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="informacion-contacto">
-                <img src="email-icon.png" alt="email icon" style="width: 50px;height:50px;">
-                <a href="mailto:victorseart@hotmail.com"><h3> E-mail: victorseart@hotmail.com </h3></a>
+        <section id="contacto">
+            <div class="container">
+                <div class="informacion-contacto">
+                    <div>
+                        <img
+                            src="./images/email-icon.png"
+                            alt="email icon"
+                            style="width: 40px; height: 50px; margin-right: 5px"
+                        />
+                        <a href="mailto:victorseart@hotmail.com"
+                            ><h3>VictorSeart@hotmail.com</h3></a
+                        >
+                    </div>
 
-                <img src="email-icon.png" alt="email icon" style="width: 50px;height:50px;">
-                <a href="https://www.youtube.com/channel/UCXnuvynWh8KUvl2yKrdIFmA"><h3>Youtube: victorseart@hotmail.com</h3></a>
+                    <div>
+                        <img
+                            src="./images/white-youtube-logo-icon.png"
+                            alt="email icon"
+                            style="
+                                width: 55px;
+                                height: 40px;
+                                margin-right: -5px;
+                            "
+                        />
+                        <a
+                            href="https://www.youtube.com/channel/UCXnuvynWh8KUvl2yKrdIFmA"
+                            target="_blank"
+                            ><h3>@VictorSeart</h3></a
+                        >
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-</body>
+        </section>
+    </body>
 </hmtl>

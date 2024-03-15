@@ -1,71 +1,96 @@
-header{
+@font-face {
+    font-family: Pixeled;
+    src: url(fonts/pixeled/Pixeled.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+header {
     display: flex;
     height: 100px;
-    background-color: #0892d0;
+    background-color: #00608b;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-h1{ font-size: 5.5em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
+h1 {
+    font-size: 5.5em;
+}
+h2 {
+    font-size: 2.7em;
+}
+h3 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.25em;
+}
+ul {
+    list-style: none;
+}
 
-.nombre-empresa{
+.nombre-empresa {
     justify-content: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-.logo-img{
+.logo-img {
     height: 50px;
+    margin-left: 10px;
 }
 
-body{
+body {
     background-color: rgb(46, 48, 48);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
     margin: 0;
 }
 
-nav a{
+nav a {
     font-weight: 600;
+    font-size: 18px;
     padding-right: 10px;
 }
 
-nav a:hover{
-    color:white;
+nav a:hover {
+    color: white;
 }
 
-@media (max-width:700px){
-    header{
+@media (max-width: 700px) {
+    header {
         flex-direction: column;
     }
 
-    nav{
+    nav {
         padding: 10px 0px;
     }
 }
 
-.container{
+.container {
     max-width: 1400px;
     margin: auto;
 }
 
-#about-me{
+#about-me {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,29 +99,32 @@ nav a:hover{
     height: 90vh;
     color: white;
     background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("background_aboutme.png");
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('./images/background_aboutme.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#proyectos{
+.title-container > h1 {
+    margin: 40px;
+}
+
+#proyectos {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: row;
-    height: 70vh;
     color: white;
-    background-image: url("proyecto-bg.png");
+    background-color: #212832;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#proyectos .title-container{
+#proyectos .title-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,29 +132,37 @@ nav a:hover{
     flex-direction: column;
 }
 
-#proyectos .container{
+#proyectos .container-proyect {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 200px;
     text-align: center;
     flex-direction: row;
+    margin-bottom: 100px;
 }
 
-#proyectos .proyectos-video{
-    margin-bottom: 50px;
-
+#proyectos .proyectos-video {
+    margin-bottom: 10px;
 }
 
-#proyectos .subcontainer{
+#proyectos .subcontainer-proyect {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    gap: 15px;
     flex-direction: column;
-    margin-left: 10%;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-#contacto .title-container{
+.description-text {
+    font-family: 'Ubuntu', sans-serif;
+    width: 450px;
+}
+
+#contacto {
+    background-color: #00608b;
+}
+#contacto .title-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,16 +171,67 @@ nav a:hover{
     color: white;
 }
 
-#contacto .informacion-contacto{
+#contacto .informacion-contacto {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     flex-direction: row;
+    justify-content: center;
+    gap: 50px;
     color: white;
 }
 
+#contacto .informacion-contacto div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.button-buy {
+    background-color: #ffbb00;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    font-family: 'Pixeled', sans-serif;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: 10px 10px 17px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
 
+.button-buy:focus {
+    outline: 0;
+}
 
+.button-buy:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    bottom: 4px;
+    left: 4px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+}
 
+.button-buy:hover:after {
+    bottom: 2px;
+    left: 2px;
+}
+
+@media (min-width: 768px) {
+    .button-buy {
+        padding: 10px 10px 17px 10px;
+        font-size: 1.25rem;
+    }
+}
