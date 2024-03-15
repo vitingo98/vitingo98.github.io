@@ -1,0 +1,150 @@
+header{
+    display: flex;
+    height: 100px;
+    background-color: #0892d0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{ font-size: 5.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+.nombre-empresa{
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    height: 50px;
+}
+
+body{
+    background-color: rgb(46, 48, 48);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color:white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("background_aboutme.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#proyectos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    height: 70vh;
+    color: white;
+    background-image: url("proyecto-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#proyectos .title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#proyectos .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+#proyectos .proyectos-video{
+    margin-bottom: 50px;
+
+}
+
+#proyectos .subcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#contacto .title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+#contacto .informacion-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    color: white;
+}
+
+
+
+
+
